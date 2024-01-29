@@ -47,6 +47,6 @@ app.post("myStore", (req, res) => {
   MyStore?.push({});
 });
 
-app.listen(5000, () => {
+app.listen(5000 || process.env.PORT, () => {
   console.log("listening on Port 5000");
 });
